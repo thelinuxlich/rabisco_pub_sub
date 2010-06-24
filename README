@@ -1,0 +1,3 @@
+- Run "node faye-node-server.js"
+- Open "rabisco_pub_sub.html" in your favorite HTML5-compatible browser.
+- Enjoy.

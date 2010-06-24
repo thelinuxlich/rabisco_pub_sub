@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd”>
+<html>
+<head>
+    <meta http-equiv='Content-type' content='text/html;charset=UTF-8' />
+    <title>RabiscoPubSub</title>
+    <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/cupertino/jquery-ui.css'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js'></script>
+    <script src='faye-client-min.js'></script>
+    <script src='rabisco_pub_sub.js'></script>
+    <link rel='stylesheet' type='text/css' href='rabisco_pub_sub.css'>
+</head>
+<body>
+    <h1>RabiscoPubSub</h1>
+    <div id='status'></div>
+    <div class='button disabled color' id='color-000'></div>
+    <div class='button disabled color' id='color-f00'></div>
+    <div class='button disabled color' id='color-0f0'></div>
+    <div class='button disabled color' id='color-00f'></div>
+    <div class='button disabled linew' id='color-2'><div></div></div>
+    <input id='erase' type='button' value='erase sketch' disabled>
+    <input id='disconnect' type='button' value='disconnect' disabled>
+    <div class='clear'></div>
+    <canvas id='sketch' class='disabled' width='600' height='500'></canvas>
+    <div id='login_dialog' class='hidden'>
+        <label>Serviço:</label><input type='text' id='service'>
+        <label>Proprietário?:</label>
+        <select id='owner'>
+            <option value="true">Sim</option>
+            <option value="false">Não</option>
+        </select>    
+    </div>
+</body>
+</html>
+
